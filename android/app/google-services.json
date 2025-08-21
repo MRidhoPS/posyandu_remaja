@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "974716091349",
+    "project_id": "posrem-db",
+    "storage_bucket": "posrem-db.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:974716091349:android:67a7c335a5c8ff63169b5c",
+        "android_client_info": {
+          "package_name": "com.example.posrem_webapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEZ0tE42f8pEHHIex88g-E87eq_Qgb4cc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
