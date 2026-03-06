@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             floatingActionButtonTheme: const FloatingActionButtonThemeData(
                 backgroundColor: Colors.white, foregroundColor: Colors.black),
-            cardTheme: CardTheme(
+            cardTheme: CardThemeData(
                 color: Colors.white,
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(10))),
