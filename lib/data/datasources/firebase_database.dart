@@ -7,7 +7,7 @@ import 'package:universal_html/html.dart' as html;
 class DatabaseServices {
   final db = FirebaseFirestore.instance;
 
-  void createUser(
+  Future<void> createUser(
     String name,
     String gender,
     String born,

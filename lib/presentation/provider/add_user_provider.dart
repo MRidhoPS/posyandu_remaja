@@ -23,36 +23,26 @@ class AddUserProvider with ChangeNotifier {
   }
 
   Future<void> addUser() async {
-    _isLoading = true;
+  _isLoading = true;
+  notifyListeners();
+
+  try {
+    await databaseServices.createUser(
+      nameController.text,
+      selectedGender,
+      bornController.text,
+      religionController.text,
+      addressController.text,
+      educationController.text,
+      phoneNumController.text,
+    );
+  } catch (e) {
+    print(e);
+  } finally {
+    _isLoading = false;
     notifyListeners();
-
-    try {
-      databaseServices.createUser(
-        nameController.text,
-        selectedGender,
-        bornController.text,
-        religionController.text,
-        addressController.text,
-        educationController.text,
-        phoneNumController.text,
-      );
-
-      nameController.clear();
-      genderController.clear();
-      bornController.clear();
-      religionController.clear();
-      addressController.clear();
-      educationController.clear();
-      phoneNumController.clear();
-
-      notifyListeners();
-    } catch (e) {
-      rethrow;
-    } finally {
-      _isLoading = false;
-      notifyListeners();
-    }
   }
+}
 
   @override
   void dispose() {
