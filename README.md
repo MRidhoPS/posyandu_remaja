@@ -1,6 +1,10 @@
 # posrem_webapp
 
-A new Flutter project.
+Don't forget to:
+1. Flutter build web
+2. Add change
+3. Commit
+4. Push to main
 
 ## Getting Started
 
